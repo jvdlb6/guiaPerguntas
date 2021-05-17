@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5, a, label, p{
+    color: #FFF;
+}
+
+nav{
+    background-color: #030E1A;
+}
+
+.card{
+    background-color: #030E1A;
+    border-color: #FFF;
+}
+.card-header{
+    background-color: #030E1A;
+    border-color: #030E1A;
+}
+
+.card-footer{
+    background-color: #030E1A;
+    border-color: #030E1A;
+}
+
+.btn-success{
+    color: #000;
+    background-color:  #00FFBB;
+    border-color: #00FFBB;
+}
+.btn-primary{
+    background-color:  rgba(0, 89, 179, 0.4);
+    border-color: #030E1A;
+}
+
+
+body{
+    background-color: #030E1A;
+}
+
+#formulario-pergunta{
+    margin-top: 5vh;
+}
