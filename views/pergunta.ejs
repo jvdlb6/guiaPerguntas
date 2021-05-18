@@ -1,22 +1,25 @@
 <%- include partials/header.ejs %>
 <body>
     <%- include partials/navbar.ejs %>
-    <div class="container">
-        <hr>
-        <h1><%= pergunta.titulo %></h1>
-        <hr>
+    <div class="container">  
+        <br>
+        <h1 class = "tituloPergunta"><%= pergunta.titulo %></h1>
         <p><%= pergunta.descricao %></p>
         <hr>
-        
-        <hr>
-        <h3>Respostas</h3>
-        <hr>
-        <% respostas.forEach(resposta => {%>
-            <br>
-            <div class="card">
-                <div class="card-body">
-                    <p><%= resposta.corpo %></p>
-                </div>
+        <form method="POST" action="/responder">
+           <br>
+            <label>Resposta:</label>
+            <textarea placeholder="Digite sua resposta" class="form-control" name="corpo"></textarea><br>
+            <input type="hidden" name="pergunta" value="<%= pergunta.id %>">
+            <button type="submit" class="btn btn-success">Responder</button>
+        </form>
+        <br>
+        <h3>Respostas anteriores para essa pergunta:</h3>
+        <% respostas.forEach(resposta => { %>
+            <div class = 'list-group'>
+                <br>
+                <li class = 'list-group-item'>
+                    <%= resposta.corpo %>
             </div>
         <% }) %>
     </div>

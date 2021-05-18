@@ -2,13 +2,33 @@ h1, h2, h3, h4, h5, a, label, p{
     color: #FFF;
 }
 
+h1.tituloPergunta {
+    text-align: center;
+}
+p#pPergunta {
+    text-align: center;
+}
+
 nav{
     background-color: #030E1A;
 }
 
+.list-group {
+    background-color: #fdd482;
+  }
+
+  .list-group-item {
+    background-color: #fdecc8;
+  }
+
+card.cardResposta{
+    color: #FFF;
+    border-color: #030E1A;
+}
+
 .card{
     background-color: #030E1A;
-    border-color: #FFF;
+    border-color: #00FFBB;
 }
 .card-header{
     background-color: #030E1A;
