@@ -4,7 +4,9 @@
     <div class="container">  
         <br>
         <h1 class = "tituloPergunta"><%= pergunta.titulo %></h1>
-        <p><%= pergunta.descricao %></p>
+        <h4 class = "categoriaPergunta"><%= pergunta.categoria %></h4>
+        <p><%= pergunta.descricao %></p><br>
+        <p>Categoria: <%= pergunta.categoria %></p>
         <hr>
         <form method="POST" action="/responder">
            <br>

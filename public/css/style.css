@@ -1,9 +1,12 @@
-h1, h2, h3, h4, h5, a, label, p{
+h1, h2, h3, h4, h5, h6, a, label, p{
     color: #FFF;
 }
 
 h1.tituloPergunta {
     text-align: center;
+}
+h6.categoriaPergunta {
+    text-align: top-right;
 }
 p#pPergunta {
     text-align: center;

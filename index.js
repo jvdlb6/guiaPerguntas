@@ -42,10 +42,11 @@ app.get('/perguntar', (req, res) => {
 app.post('/salvarpergunta', (req, res) => {
   const titulo = req.body.titulo
   const descricao = req.body.descricao
-
+  const categoria = req.body.categoria
   Pergunta.create({
     titulo: titulo,
-    descricao: descricao
+    descricao: descricao,
+    categoria: categoria
   }).then(() => {
     res.redirect('/')
   })
